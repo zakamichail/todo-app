@@ -1,0 +1,205 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #595ca3;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #1acd2f;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  margin: 1em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #59a96c;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+#main {
+  border: #f9f9f9;
+  border-style: groove;
+  border-radius: 8px;
+  align-items: center;
+  text-align: center;
+  position: absolute;
+  bottom: 50%;
+  right: 50%;
+  transform: translate(50%, 50%);
+}
+
+.todoitem {
+  width: 100%;
+}
+
+.todoitem input {
+  padding: 50em;
+  margin: 1em;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #18a927;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* ниже с того проекта */
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.app-container {
+  max-width: 500px;
+  width: 100%;
+  padding: 30px; 
+  background-color: #5a5a5a;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+h1 {
+  font-size: 26px;
+  color: #cccccc;
+  margin-bottom: 25px; 
+}
+
+.todo-form {
+  display: flex;
+  gap: 12px; 
+  margin-bottom: 20px;
+}
+
+.todo-form input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.todo-form button {
+  padding: 10px 16px;
+  font-size: 16px;
+  color: white;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.todo-form button:hover {
+  background-color: #82c084;
+
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 25px; 
+}
+
+.filter-buttons button {
+  padding: 8px 14px;
+  font-size: 14px;
+  color: #a8a8a8;
+  background-color: #323232;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.filter-buttons button:hover {
+  background-color: #d0d0d0;
+}
+
+.todo-list {
+  margin-top: 15px;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px; 
+}
+
+.todo-item input[type="checkbox"] {
+  margin-right: 12px;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.todo-item span {
+  flex: 1;
+  font-size: 16px;
+  color: #f9f9f9;
+}
+
+.todo-item span.completed {
+  text-decoration: line-through;
+  color: #c1c1c1;
+}
+
+.todo-item button {
+  padding: 8px 12px;
+  font-size: 14px;  
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
